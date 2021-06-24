@@ -19,4 +19,4 @@
 ---
 ## Author
 
-- Frontend Mentor - [@Jose-Angel-Rey](https://www.frontendmentor.io/profile/Jose-Angel-Re
+- Frontend Mentor - [@Jose-Angel-Rey](https://www.frontendmentor.io/profile/Jose-Angel-Rey)

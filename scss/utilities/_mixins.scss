@@ -1,0 +1,36 @@
+// **************************
+//         MIXINS
+// **************************
+
+@mixin bdr($bdr-color: magenta) {
+    border: 0px solid $bdr-color;
+}
+
+// Flexbox
+@mixin flexbox($flow: column nowrap,
+    $justify: center,
+    $align: center) {
+    display: flex;
+    flex-flow: $flow;
+    justify-content: $justify;
+    align-items: $align;
+}
+
+// Horizontal center
+@mixin h-center {
+    margin-right: auto;
+    margin-left: auto;
+}
+
+// Media queries
+@mixin for-medium-screens {
+    @media screen and (min-width: 768px) {
+        @content;
+    }
+}
+
+@mixin for-large-screens {
+    @media screen and (min-width: 1024px) {
+        @content;
+    }
+}

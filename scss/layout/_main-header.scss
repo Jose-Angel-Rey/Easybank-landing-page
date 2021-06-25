@@ -21,6 +21,11 @@
         background-position: 40vw 65%;
     }
 
+    @media screen and (min-width:1440px){
+        background-position: 38vw 60%;
+        padding: 18rem 0;
+    }
+
     .container-content {
         @include for-medium-screens {
             flex-direction: row;
@@ -84,5 +89,9 @@
             bottom: -45rem;
             width: 70rem;
         }
+    @media screen and (min-width:1440px){
+        bottom: -50rem;
+        width: 80rem;
+    }
     }
 }

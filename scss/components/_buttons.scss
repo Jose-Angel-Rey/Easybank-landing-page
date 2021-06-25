@@ -6,11 +6,22 @@
     padding: 1.5rem 4rem;
     border: none;
     border-radius: 5rem;
+    cursor: pointer;
     outline: none;
+    transition: all .5s;
 
     &-cta {
-        background-image: linear-gradient(90deg, $lime-green, $bright-cyan);
+        background: linear-gradient(90deg, $lime-green, $bright-cyan);
         color: $white;
         font-weight: 700;
+
+        &:hover {
+            transform: translateY(-5px);
+            opacity: .8;
+        }
+        &:active{
+            transform: none;
+            opacity: 1;
+        }
     }
 }

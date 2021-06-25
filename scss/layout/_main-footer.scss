@@ -6,11 +6,9 @@
     background-color: $dark-blue;
     color: $white;
 
-    &__container {
-        margin: 3rem auto;
-    }
-
     .container-content {
+        margin: 3rem auto;
+
         @include for-medium-screens {
             flex-direction: row;
             justify-content: space-between;
@@ -29,6 +27,11 @@
             display: flex;
             max-width: 30rem;
         }
+
+        @include for-extra-large-screens {
+            margin-right: auto;
+            margin-left: 10rem;
+        }
     }
 
     &__nav {
@@ -37,6 +40,13 @@
         @include for-medium-screens {
             &:first-of-type {
                 margin-right: 2rem;
+
+            }
+        }
+
+        @include for-extra-large-screens {
+            &:first-of-type {
+                margin-right: 10rem;
 
             }
         }
@@ -51,7 +61,10 @@
 
     // CTA
     &__cta {
-        text-align: center
+        text-align: center;
+        @include for-extra-large-screens{
+            text-align: right;
+        }
     }
 
     &__copy {

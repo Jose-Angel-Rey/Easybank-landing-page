@@ -34,9 +34,10 @@
             width: 100%;
             max-width: 70rem;
         }
+
         @include for-extra-large-screens {
             justify-content: space-between;
-        max-width: 100%;
+            max-width: 100%;
         }
 
     }
@@ -49,7 +50,8 @@
     &__description {
         margin: 2rem auto 4rem;
         max-width: 40rem;
-        @include for-extra-large-screens{
+
+        @include for-extra-large-screens {
             margin: 2rem 0 4rem;
             max-width: 60rem;
         }
@@ -67,6 +69,12 @@
         &-title {
             margin: 2rem auto;
         }
+
+        &-description {
+            @include for-extra-large-screens {
+                font-size: 1.5rem;
+            }
+        }
     }
 }
 
@@ -78,8 +86,11 @@
         padding: 12rem 0;
     }
 
-    &__container {
-        text-align: left;
+    .container-content {
+        @include for-extra-large-screens {
+            align-items: flex-start;
+            text-align: left;
+        }
     }
 
     &__title {
@@ -87,21 +98,26 @@
         margin-bottom: 5rem;
     }
 
-    &__content-container {
+    &__articles-container {
+        text-align: left;
         @extend .why-choose-easybank__articles-container;
-
     }
 
     &__article {
         @extend .why-choose-easybank__article;
         border-radius: 1rem;
-        box-shadow: 0 0 5px rgba(#aaa, .3);
+        box-shadow: 0 0 15px rgba(#aaa, .2);
         font-size: 1.4rem;
         max-width: 33rem;
         padding-bottom: 4rem;
 
         @include for-medium-screens {
             max-width: 28rem;
+        }
+
+        @include for-extra-large-screens {
+            // min-width: 25%;
+            max-width: 25rem;
         }
 
         &-author,
@@ -120,10 +136,18 @@
                 object-position: center;
             }
 
+            @include for-extra-large-screens {
+                height: 20rem;
+            }
+
         }
 
         &-author {
             margin-top: 3rem;
+
+            @include for-extra-large-screens {
+                font-size: 1rem;
+            }
         }
 
         &-title {
@@ -133,6 +157,10 @@
 
         &-description {
             line-height: 2.2rem;
+
+            @include for-extra-large-screens {
+                font-size: 1.2rem;
+            }
         }
 
     }

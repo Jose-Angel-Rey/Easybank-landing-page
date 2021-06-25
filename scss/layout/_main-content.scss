@@ -3,7 +3,7 @@
 // **************************
 
 .main-content{
-    display: none !important;
+    // display: none !important;
 }
 .why-choose-easybank {
     background-color: $light-grayish-blue;
@@ -53,6 +53,7 @@
         border-radius: 1rem;
         box-shadow: 0 0 5px rgba(#aaa, .3);
         font-size: 1.4rem;
+        max-width: 33rem;
         padding-bottom: 4rem;
 
         &-author,

@@ -11,6 +11,10 @@
     z-index: 100;
     // display: none !important;
 
+    // @include for-medium-screens {
+    //     padding: 1rem 0;
+    // }
+
     &--overlay-menu {
         box-shadow: 0px 15px 15px 100vh rgba(0, 0, 0, 0.55);
     }
@@ -34,6 +38,10 @@
     //  ---- CTA btn ----
     .btn-cta {
         display: none;
+
+        @include for-medium-screens {
+            display: inline-block;
+        }
     }
 
     //  ----- Nav -----
@@ -49,12 +57,26 @@
         transition: all .5s;
         transform: translateX(170%);
 
+        @include for-medium-screens {
+            display: flex;
+            justify-content: space-evenly;
+            position: static;
+            transform: none;
+            width: 45%;
+            max-width: 40rem;
+
+        }
+
         &--active {
             transform: none;
         }
 
         &-item {
             margin: 1rem auto;
+
+            @include for-medium-screens {
+                margin: 0;
+            }
         }
 
         &-link {
@@ -62,6 +84,11 @@
             display: inline-block;
             padding: 1rem;
             text-decoration: none;
+
+            @include for-medium-screens {
+                padding: 0;
+                color: $grayish-blue;
+            }
         }
     }
 }

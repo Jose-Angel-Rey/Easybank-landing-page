@@ -13,8 +13,12 @@
     @include for-medium-screens {
         background-image: url(../../images/bg-intro-desktop.svg);
         background-size: cover;
-        background-position: 35vw -45vh;
+        background-position: 40vw top;
         padding: 12rem 0;
+    }
+
+    @include for-extra-large-screens {
+        background-position: 40vw 65%;
     }
 
     .container-content {
@@ -33,11 +37,20 @@
         @include for-medium-screens {
             text-align: left;
         }
+
+        @include for-extra-large-screens {
+            max-width: 44rem;
+        }
     }
 
     &__title {
         font-size: 4rem;
         line-height: 4.5rem;
+
+        @include for-extra-large-screens {
+            font-size: 5rem;
+            line-height: 6rem;
+        }
     }
 
     &__description {
@@ -65,6 +78,11 @@
             bottom: -35rem;
             left: 0;
             width: 60rem;
+        }
+
+        @include for-extra-large-screens {
+            bottom: -45rem;
+            width: 70rem;
         }
     }
 }

@@ -14,17 +14,31 @@
         padding: 12rem 0;
     }
 
-    &__container {
+    // @include for-extra-large-screens{
+    //     padding: 15rem 0;
+    // }
+
+    .container-content {
         text-align: center;
         line-height: 2.4rem;
+
+        @include for-extra-large-screens {
+            align-items: flex-start;
+            text-align: left;
+        }
     }
 
-    &__content-container {
+    &__articles-container {
         @include for-medium-screens {
             @include flexbox($flow:row wrap, $justify:space-evenly);
             width: 100%;
             max-width: 70rem;
         }
+        @include for-extra-large-screens {
+            justify-content: space-between;
+        max-width: 100%;
+        }
+
     }
 
     &__title {
@@ -35,6 +49,10 @@
     &__description {
         margin: 2rem auto 4rem;
         max-width: 40rem;
+        @include for-extra-large-screens{
+            margin: 2rem 0 4rem;
+            max-width: 60rem;
+        }
     }
 
     &__article {
@@ -70,7 +88,7 @@
     }
 
     &__content-container {
-        @extend .why-choose-easybank__content-container;
+        @extend .why-choose-easybank__articles-container;
 
     }
 

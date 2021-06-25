@@ -30,4 +30,8 @@
     @include for-large-screens {
         max-width: 100rem;
     }
+
+    @include for-extra-large-screens {
+        max-width: 110rem;
+    }
 }

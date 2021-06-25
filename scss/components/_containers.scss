@@ -9,6 +9,7 @@
     font-size: 1.6rem;
     overflow-x: hidden;
 }
+
 .container-section {
     @include bdr;
     @include flexbox;
@@ -22,6 +23,7 @@
     max-width: 60rem;
 
     @include for-medium-screens {
+        width: 90%;
         max-width: 90rem;
     }
 

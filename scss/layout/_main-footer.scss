@@ -10,15 +10,36 @@
         margin: 3rem auto;
     }
 
+    .container-content {
+        @include for-medium-screens {
+            flex-direction: row;
+            justify-content: space-between;
+        }
+    }
+
     // Navbar
     &__navbar {
         @include bdr(cyan);
         margin: 3rem auto;
         text-align: center;
+
+        @include for-medium-screens {
+            margin: 0;
+            text-align: left;
+            display: flex;
+            max-width: 30rem;
+        }
     }
 
     &__nav {
         list-style-type: none;
+
+        @include for-medium-screens {
+            &:first-of-type {
+                margin-right: 2rem;
+
+            }
+        }
     }
 
     &__nav-link {

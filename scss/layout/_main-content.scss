@@ -2,9 +2,10 @@
 //        MAIN CONTENT
 // **************************
 
-.main-content{
+.main-content {
     // display: none !important;
 }
+
 .why-choose-easybank {
     background-color: $light-grayish-blue;
     padding: 8rem 0;
@@ -12,6 +13,14 @@
     &__container {
         text-align: center;
         line-height: 2.4rem;
+    }
+
+    &__content-container {
+        @include for-medium-screens {
+            @include flexbox($flow:row wrap, $justify:space-evenly);
+            width: 100%;
+            max-width: 70rem;
+        }
     }
 
     &__title {
@@ -28,6 +37,10 @@
         @include bdr;
         margin-bottom: 3.5rem;
         max-width: 35rem;
+
+        @include for-medium-screens {
+            max-width: 25rem;
+        }
 
         &-title {
             margin: 2rem auto;
@@ -48,6 +61,11 @@
         margin-bottom: 5rem;
     }
 
+    &__content-container {
+        @extend .why-choose-easybank__content-container;
+
+    }
+
     &__article {
         @extend .why-choose-easybank__article;
         border-radius: 1rem;
@@ -55,6 +73,10 @@
         font-size: 1.4rem;
         max-width: 33rem;
         padding-bottom: 4rem;
+
+        @include for-medium-screens {
+            max-width: 28rem;
+        }
 
         &-author,
         &-title,
@@ -64,6 +86,14 @@
 
         &-img {
             border-radius: 1rem 1rem 0 0;
+
+        @include for-medium-screens {
+            height: 22rem;
+            object-fit: cover;
+            object-position: center;
+            width: 100%;
+               }
+            
         }
 
         &-author {

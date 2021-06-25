@@ -10,6 +10,10 @@
     background-color: $light-grayish-blue;
     padding: 8rem 0;
 
+    @include for-medium-screens {
+        padding: 12rem 0;
+    }
+
     &__container {
         text-align: center;
         line-height: 2.4rem;
@@ -52,6 +56,10 @@
     background-color: $very-light-gray;
     padding: 8rem 0;
 
+    @include for-medium-screens {
+        padding: 12rem 0;
+    }
+
     &__container {
         text-align: left;
     }
@@ -86,14 +94,14 @@
 
         &-img {
             border-radius: 1rem 1rem 0 0;
-
-        @include for-medium-screens {
-            height: 22rem;
-            object-fit: cover;
-            object-position: center;
             width: 100%;
-               }
-            
+
+            @include for-medium-screens {
+                height: 22rem;
+                object-fit: cover;
+                object-position: center;
+            }
+
         }
 
         &-author {

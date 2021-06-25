@@ -11,9 +11,9 @@
     z-index: 100;
     // display: none !important;
 
-    // @include for-medium-screens {
-    //     padding: 1rem 0;
-    // }
+    @include for-medium-screens {
+        position: static;
+    }
 
     &--overlay-menu {
         box-shadow: 0px 15px 15px 100vh rgba(0, 0, 0, 0.55);

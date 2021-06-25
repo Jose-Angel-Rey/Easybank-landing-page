@@ -10,10 +10,29 @@
     padding-bottom: 8rem;
     // display: none !important;
 
+    @include for-medium-screens {
+        background-image: url(../../images/bg-intro-desktop.svg);
+        background-size: cover;
+        background-position: 35vw -45vh;
+        padding: 12rem 0;
+    }
+
+    .container-content {
+        @include for-medium-screens {
+            flex-direction: row;
+            justify-content: space-between;
+        }
+    }
+
+
     &__content {
         // margin-top: 3rem;
         max-width: 37rem;
         text-align: center;
+
+        @include for-medium-screens {
+            text-align: left;
+        }
     }
 
     &__title {
@@ -28,10 +47,24 @@
 
     &__mockup-container {
         order: -1;
-        // position: relative;
+
+        @include for-medium-screens {
+            order: 1;
+            position: relative;
+            width: 50%;
+        }
     }
 
     &__mockup {
         transform: translateY(-10%);
+        width: 100%;
+
+        @include for-medium-screens {
+            transform: none;
+            position: absolute;
+            bottom: -35rem;
+            left: 0;
+            width: 60rem;
+        }
     }
 }

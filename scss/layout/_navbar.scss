@@ -36,8 +36,15 @@
 
     }
 
+    &__logo {
+        width: 170px;
+        height: 25px;
+    }
+
     //  ---- Hamburger btn ----
     &__hamburger-btn {
+        width: 30px;
+        height: 25px;
         cursor: pointer;
         transition: transform .5s;
 

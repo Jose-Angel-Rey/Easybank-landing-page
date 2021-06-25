@@ -71,7 +71,8 @@
     // CTA
     &__cta {
         text-align: center;
-        @include for-extra-large-screens{
+
+        @include for-extra-large-screens {
             text-align: right;
         }
     }
@@ -86,6 +87,11 @@
     text-align: center;
     width: 100%;
     max-width: 20rem;
+
+    &__logo {
+        width: 130px;
+        height: 25px;
+    }
 
     &__links-container {
         @include bdr(orange);

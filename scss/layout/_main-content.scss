@@ -1,3 +1,79 @@
 // **************************
-//          
+//        MAIN CONTENT
 // **************************
+
+.why-choose-easybank {
+    background-color: $light-grayish-blue;
+    padding: 8rem 0;
+
+    &__container {
+        text-align: center;
+        line-height: 2.4rem;
+    }
+
+    &__title {
+        font-size: 3.5rem;
+        line-height: 4.5rem;
+    }
+
+    &__description {
+        margin: 2rem auto 4rem;
+        max-width: 40rem;
+    }
+
+    &__article {
+        @include bdr;
+        margin-bottom: 3.5rem;
+        max-width: 35rem;
+
+        &-title {
+            margin: 2rem auto;
+        }
+    }
+}
+
+.latest-articles {
+    background-color: $very-light-gray;
+    padding: 8rem 0;
+
+    &__container {
+        text-align: left;
+    }
+
+    &__title {
+        font-size: 3.5rem;
+        margin-bottom: 5rem;
+    }
+
+    &__article {
+        @extend .why-choose-easybank__article;
+        border-radius: 1rem;
+        box-shadow: 0 0 5px rgba(#aaa, .3);
+        padding-bottom: 4rem;
+
+        &-author,
+        &-title,
+        &-description {
+            padding: 0 2rem;
+        }
+
+        &-img {
+            border-radius: 1rem 1rem 0 0;
+        }
+
+        &-author {
+            font-size: 1.4rem;
+            margin-top: 3rem;
+        }
+
+        &-title {
+            margin: 1.5rem auto;
+        }
+
+        &-description {
+            font-size: 1.5rem;
+            line-height: 2.2rem;
+        }
+
+    }
+}

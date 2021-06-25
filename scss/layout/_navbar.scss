@@ -9,6 +9,7 @@
     position: fixed;
     top: 0;
     z-index: 100;
+    transition: all .5s;
     // display: none !important;
 
     @include for-medium-screens {
@@ -31,6 +32,17 @@
 
     //  ---- Hamburger btn ----
     &__hamburger-btn {
+        cursor: pointer;
+        transition: transform .5s;
+
+        &:hover {
+            transform: scale(1.1);
+        }
+
+        &:active {
+            transform: none;
+        }
+
         @include for-medium-screens {
             display: none;
         }

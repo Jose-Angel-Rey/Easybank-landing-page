@@ -1,5 +1,6 @@
 "use strict";
 
+// ------ Mobile menu --------
 let navbar = document.querySelector(".navbar");
 let hamburgerBtn = document.querySelector(".navbar__hamburger-btn");
 let mobileNav = document.querySelector(".navbar__nav");

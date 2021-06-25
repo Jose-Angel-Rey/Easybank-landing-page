@@ -27,7 +27,13 @@
         flex-direction: row;
         justify-content: space-between;
         position: relative;
-        // width: 100%;
+
+        @include for-medium-screens {
+            opacity: 0;
+            transform: translateY(-5rem);
+            animation: reveal 1s 1s forwards;
+        }
+
     }
 
     //  ---- Hamburger btn ----

@@ -21,7 +21,7 @@
         background-position: 40vw 65%;
     }
 
-    @media screen and (min-width:1440px){
+    @media screen and (min-width:1440px) {
         background-position: 38vw 60%;
         padding: 18rem 0;
     }
@@ -41,6 +41,9 @@
 
         @include for-medium-screens {
             text-align: left;
+            opacity: 0;
+            transform: translateX(-5rem);
+            animation: reveal 1s 1.5s ease-out forwards;
         }
 
         @include for-extra-large-screens {
@@ -83,15 +86,20 @@
             bottom: -35rem;
             left: 0;
             width: 60rem;
+            opacity: 0;
+            transform: translateY(-5rem);
+            animation: reveal 2s 1.8s ease-out forwards;
+        
         }
 
         @include for-extra-large-screens {
             bottom: -45rem;
             width: 70rem;
         }
-    @media screen and (min-width:1440px){
-        bottom: -50rem;
-        width: 80rem;
-    }
+
+        @media screen and (min-width:1440px) {
+            bottom: -50rem;
+            width: 80rem;
+        }
     }
 }

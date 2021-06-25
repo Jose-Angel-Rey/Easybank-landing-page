@@ -1,3 +1,11 @@
 // **************************
 //           BASE
 // **************************
+
+.main-container {
+    @include bdr;
+    @include flexbox;
+    font-size: 1.8rem;
+    color: $white;
+    background-color: $dark-blue;
+}

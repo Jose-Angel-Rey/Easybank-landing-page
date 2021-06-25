@@ -1,3 +1,36 @@
 // **************************
-//          
+//       MAIN HEADER
 // **************************
+
+.main-header {
+    background-image: url(../../images/bg-intro-mobile.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center top;
+    padding-bottom: 8rem;
+
+    &__content {
+        // margin-top: 3rem;
+        max-width: 37rem;
+        text-align: center;
+    }
+
+    &__title {
+        font-size: 4rem;
+        line-height: 4.5rem;
+    }
+
+    &__description {
+        line-height: 2.4rem;
+        margin: 2rem auto;
+    }
+
+    &__mockup-container {
+        order: -1;
+        // position: relative;
+    }
+
+    &__mockup {
+        transform: translateY(-10%);
+    }
+}

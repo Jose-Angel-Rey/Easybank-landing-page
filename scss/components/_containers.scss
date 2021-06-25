@@ -5,11 +5,10 @@
 .main-container {
     @include bdr;
     @include flexbox;
-    font-size: 1.8rem;
-    color: $white;
-    background-color: $dark-blue;
+    background-color: $white;
+    font-size: 1.6rem;
+    overflow-x: hidden;
 }
-
 .container-section {
     @include bdr;
     @include flexbox;
@@ -20,7 +19,7 @@
     @include bdr(red);
     @include flexbox;
     width: 90%;
-    max-width: 50rem;
+    max-width: 60rem;
 
     @include for-medium-screens {
         max-width: 90rem;

@@ -2,3 +2,19 @@
 //           BASE
 // **************************
 
+img {
+    max-width: 100%;
+}
+
+h1,
+h2,
+h3,
+h4 {
+    color: $dark-blue;
+    font-weight: 400;
+}
+
+p {
+    color: $grayish-blue;
+    font-weight: 300;
+}

@@ -39,33 +39,35 @@
     <!--  --- Navbar --- -->
     <nav class="navbar container-section">
       <!-- Container -->
-      <div class="navbar__container container-content">
+      <div class="container-content">
         <!-- Logo -->
         <a href="#" class="navbar__logo">
-          <img src="./images/logo.svg" alt="Easybank logo"></a>
+          <img src="./images/logo.svg" alt="Easybank logo" width="170px" height="25px">
+        </a>
+        <!-- Hamburger -->
+        <img src="./images/icon-hamburger.svg" alt="" class="navbar__hamburger-btn" width="35px" height="25px">
+        <!-- Nav -->
+        <ul class="navbar__nav">
+          <li class="navbar__nav-item">
+            <a href="#" class="navbar__nav-link">Home</a>
+          </li>
+          <li class="navbar__nav-item">
+            <a href="#" class="navbar__nav-link">About</a>
+          </li>
+          <li class="navbar__nav-item">
+            <a href="#" class="navbar__nav-link">Contact</a>
+          </li>
+          <li class="navbar__nav-item">
+            <a href="#" class="navbar__nav-link">Blog</a>
+          </li>
+          <li class="navbar__nav-item">
+            <a href="#" class="navbar__nav-link">Careers</a>
+          </li>
+        </ul>
+        <!-- CTA btn -->
+        <button class="btn btn-cta">Request Invite</button>
       </div>
-      <!-- Hamburger -->
-      <img src="./images/icon-hamburger.svg" alt="" class="navbar__hamburger-btn">
-      <!-- Nav -->
-      <ul class="navbar__nav">
-        <li class="navbar__nav-item">
-          <a href="#" class="navbar__nav-link">Home</a>
-        </li>
-        <li class="navbar__nav-item">
-          <a href="#" class="navbar__nav-link">About</a>
-        </li>
-        <li class="navbar__nav-item">
-          <a href="#" class="navbar__nav-link">Contact</a>
-        </li>
-        <li class="navbar__nav-item">
-          <a href="#" class="navbar__nav-link">Blog</a>
-        </li>
-        <li class="navbar__nav-item">
-          <a href="#" class="navbar__nav-link">Careers</a>
-        </li>
-      </ul>
-      <!-- CTA btn -->
-      <button class="btn btn-cta">Request Invite</button>
+
     </nav>
 
     <!-- -- Main header --- -->
@@ -85,11 +87,10 @@
           <button class="btn btn-cta">Request Invite</button>
         </section>
 
-        <!-- Picture -->
-        <picture>
-          <!-- <source media="(min-width:768px)" srcset="./images/bg-intro-desktop.svg"> -->
-          <img src="./images/image-mockups.png" alt="Easybank app illustration" style="width:auto;">
-        </picture>
+        <!-- Mockup -->
+        <div class="main-header__mockup-container">
+          <img src="./images/image-mockups.png" alt="Easybank app illustration" style="width:auto;" class="main-header__mockup">
+        </div>
       </div>
     </header>
 
@@ -221,7 +222,7 @@
           <h4 class="sr-only">Social media info</h4>
 
           <!-- Logo -->
-          <img src="./images/logo.svg" alt="Easybank logo" class="social-media-info__logo">
+          <img src="./images/logo.svg" alt="Easybank logo" class="social-media-info__logo" width="170px" height="25px">
 
           <!-- Links -->
           <div class="social-media-info__links-container">

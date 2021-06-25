@@ -1,3 +1,16 @@
 // **************************
-//          
+//         BUTTONS
 // **************************
+
+.btn {
+    padding: 1.5rem 4rem;
+    border: none;
+    border-radius: 5rem;
+    outline: none;
+
+    &-cta {
+        background-image: linear-gradient(90deg, $lime-green, $bright-cyan);
+        color: $white;
+        font-weight: 700;
+    }
+}

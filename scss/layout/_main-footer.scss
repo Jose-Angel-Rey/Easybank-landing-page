@@ -57,6 +57,15 @@
         display: block;
         margin: 1rem 0;
         text-decoration: none;
+        transition: color .5s;
+
+        &:hover {
+            color: $lime-green;
+        }
+
+        &:active {
+            color: lighten($lime-green, 15%);
+        }
     }
 
     // CTA
@@ -89,5 +98,16 @@
         color: $white;
         text-decoration: none;
         font-size: 2rem;
+        transition: all .5s;
+
+        &:hover {
+            color: $lime-green;
+            transform: scale(1.1);
+        }
+
+        &:active {
+            color: lighten($lime-green, 15%);
+            transform: none;
+        }
     }
 }

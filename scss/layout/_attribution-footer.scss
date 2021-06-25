@@ -2,7 +2,7 @@
 //      ATTRIBUTION FOOTER
 // ******************************
 
-.attribution{
+.attribution {
     background-color: $dark-blue;
     color: $grayish-blue;
     font-size: 1.4rem;
@@ -10,7 +10,16 @@
     text-align: center;
     width: 100%;
 
-    a{
+    a {
         color: $white;
+        transition: color .5s;
+
+        &:hover {
+            color: $lime-green;
+        }
+
+        &:active {
+            color: lighten($lime-green, 15%);
+        }
     }
 }

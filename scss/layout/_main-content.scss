@@ -153,6 +153,20 @@
         &-title {
             font-size: 1.6rem;
             margin: 1.5rem auto;
+
+            a {
+                color: $dark-blue;
+                text-decoration: none;
+                transition: color .5s;
+
+                &:hover {
+                    color: $lime-green;
+                }
+
+                &:active {
+                    color: darken($lime-green, 15%);
+                }
+            }
         }
 
         &-description {

@@ -2,6 +2,9 @@
 //        MAIN CONTENT
 // **************************
 
+.main-content{
+    display: none !important;
+}
 .why-choose-easybank {
     background-color: $light-grayish-blue;
     padding: 8rem 0;
@@ -49,12 +52,13 @@
         @extend .why-choose-easybank__article;
         border-radius: 1rem;
         box-shadow: 0 0 5px rgba(#aaa, .3);
+        font-size: 1.4rem;
         padding-bottom: 4rem;
 
         &-author,
         &-title,
         &-description {
-            padding: 0 2rem;
+            padding: 0 2.5rem;
         }
 
         &-img {
@@ -62,16 +66,15 @@
         }
 
         &-author {
-            font-size: 1.4rem;
             margin-top: 3rem;
         }
 
         &-title {
+            font-size: 1.6rem;
             margin: 1.5rem auto;
         }
 
         &-description {
-            font-size: 1.5rem;
             line-height: 2.2rem;
         }
 

@@ -1,3 +1,16 @@
-// **************************
-//          
-// **************************
+// ******************************
+//      ATTRIBUTION FOOTER
+// ******************************
+
+.attribution{
+    background-color: $dark-blue;
+    color: $grayish-blue;
+    font-size: 1.4rem;
+    padding: 2rem;
+    text-align: center;
+    width: 100%;
+
+    a{
+        color: $white;
+    }
+}

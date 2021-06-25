@@ -2,7 +2,58 @@
 //          
 // **************************
 
-.main-footer{
+.main-footer {
     background-color: $dark-blue;
     color: $white;
+
+    &__container {
+        margin: 3rem auto;
+    }
+
+    // Navbar
+    &__navbar {
+        @include bdr(cyan);
+        margin: 3rem auto;
+        text-align: center;
+    }
+
+    &__nav {
+        list-style-type: none;
+    }
+
+    &__nav-link {
+        color: $white;
+        display: block;
+        margin: 1rem 0;
+        text-decoration: none;
+    }
+
+    // CTA
+    &__cta {
+        text-align: center
+    }
+
+    &__copy {
+        margin-top: 3rem;
+    }
+}
+
+.social-media-info {
+    @include bdr(cyan);
+    text-align: center;
+    width: 100%;
+    max-width: 20rem;
+
+    &__links-container {
+        @include bdr(orange);
+        display: flex;
+        justify-content: space-evenly;
+        margin-top: 2rem;
+    }
+
+    &__link {
+        color: $white;
+        text-decoration: none;
+        font-size: 2rem;
+    }
 }

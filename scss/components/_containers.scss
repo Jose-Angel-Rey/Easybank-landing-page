@@ -1,0 +1,32 @@
+// **************************
+//         CONTAINERS
+// **************************
+
+.main-container {
+    @include bdr;
+    @include flexbox;
+    font-size: 1.8rem;
+    color: $white;
+    background-color: $dark-blue;
+}
+
+.container-section {
+    @include bdr;
+    @include flexbox;
+    width: 100%;
+}
+
+.container-content {
+    @include bdr(red);
+    @include flexbox;
+    width: 90%;
+    max-width: 50rem;
+
+    @include for-medium-screens {
+        max-width: 90rem;
+    }
+
+    @include for-large-screens {
+        max-width: 110rem;
+    }
+}

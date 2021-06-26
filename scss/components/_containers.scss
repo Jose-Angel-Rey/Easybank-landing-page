@@ -3,7 +3,7 @@
 // **************************
 
 .main-container {
-    @include bdr;
+    
     @include flexbox;
     background-color: $white;
     font-size: 1.6rem;
@@ -11,13 +11,12 @@
 }
 
 .container-section {
-    @include bdr;
+    
     @include flexbox;
     width: 100%;
 }
 
 .container-content {
-    @include bdr(red);
     @include flexbox;
     width: 85%;
     max-width: 60rem;

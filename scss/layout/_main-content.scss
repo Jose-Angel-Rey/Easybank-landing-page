@@ -2,10 +2,7 @@
 //        MAIN CONTENT
 // **************************
 
-.main-content {
-    // display: none !important;
-}
-
+// --- Why choose Easybank section ---
 .why-choose-easybank {
     background-color: $light-grayish-blue;
     padding: 8rem 0;
@@ -14,10 +11,7 @@
         padding: 12rem 0;
     }
 
-    // @include for-extra-large-screens{
-    //     padding: 15rem 0;
-    // }
-
+    // --- Container content ---
     .container-content {
         text-align: center;
         line-height: 2.4rem;
@@ -28,6 +22,24 @@
         }
     }
 
+    // --- Title ---
+    &__title {
+        font-size: 3.5rem;
+        line-height: 4.5rem;
+    }
+
+    // --- Description ---
+    &__description {
+        margin: 2rem auto 4rem;
+        max-width: 40rem;
+
+        @include for-extra-large-screens {
+            margin: 2rem 0 4rem;
+            max-width: 60rem;
+        }
+    }
+
+    // --- Articles container ---
     &__articles-container {
         @include for-medium-screens {
             @include flexbox($flow:row wrap, $justify:space-evenly);
@@ -42,21 +54,7 @@
 
     }
 
-    &__title {
-        font-size: 3.5rem;
-        line-height: 4.5rem;
-    }
-
-    &__description {
-        margin: 2rem auto 4rem;
-        max-width: 40rem;
-
-        @include for-extra-large-screens {
-            margin: 2rem 0 4rem;
-            max-width: 60rem;
-        }
-    }
-
+    // --- Article ---
     &__article {
         margin-bottom: 3.5rem;
         max-width: 35rem;
@@ -77,6 +75,8 @@
     }
 }
 
+
+// --- Latest articles section ---
 .latest-articles {
     background-color: $very-light-gray;
     padding: 8rem 0;
@@ -85,6 +85,7 @@
         padding: 12rem 0;
     }
 
+    // --- Container content ---
     .container-content {
         @include for-extra-large-screens {
             align-items: flex-start;
@@ -92,16 +93,19 @@
         }
     }
 
+    // --- Title ---
     &__title {
         font-size: 3.5rem;
         margin-bottom: 5rem;
     }
 
+    // --- Articles container ---
     &__articles-container {
         text-align: left;
         @extend .why-choose-easybank__articles-container;
     }
 
+    // --- Article ---
     &__article {
         @extend .why-choose-easybank__article;
         border-radius: 1rem;
